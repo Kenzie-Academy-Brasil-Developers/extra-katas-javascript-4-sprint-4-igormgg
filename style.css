@@ -1,1 +1,43 @@
-/* você pode estilizar se quiser !!! */
+:root {
+    --html-background-color: black;
+    --main-background-color: #9bd4e4;
+    --mandatory-background-color: #39ace7;
+    --bonus-background-color: #0784b5;
+    --font-color: #cadeef;
+}
+
+html {
+    background-color: var(--html-background-color);
+    font-size: 9px;
+}
+
+body {
+    max-width: 1000px;
+    height: 100vh;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-background-color);
+}
+
+h3 {
+    margin: 0px;
+}
+
+.katas__mandatory {
+    background-color: var(--mandatory-background-color);
+    padding: 10px;
+}
+
+.katas__bonus {
+    background-color: var(--bonus-background-color);
+    color: var(--font-color);
+    padding: 10px;
+}
+
+@media (min-width: 760px){
+    html{
+        font-size: 18px;
+    }
+}
